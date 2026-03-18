@@ -74,107 +74,47 @@
 };
 
     const GROUPS = {
-      A: [
-        { code: "MEX", name: "멕시코",       rank: 16 },
-        { code: "KOR", name: "한국",         rank: 23 },
-        { code: "RSA", name: "남아공",       rank: 60 },
-        { code: "POD", name: "UEFA PO-D",    rank: 35 },
-      ],
-      B: [
-        { code: "CAN", name: "캐나다",       rank: 29 },
-        { code: "SUI", name: "스위스",       rank: 22 },
-        { code: "POA", name: "UEFA PO-A",    rank: 40 },
-        { code: "QAT", name: "카타르",       rank: 57 },
-      ],
-      C: [
-        { code: "BRA", name: "브라질",       rank: 5  },
-        { code: "MAR", name: "모로코",       rank: 8  },
-        { code: "SCO", name: "스코틀랜드",   rank: 37 },
-        { code: "HAI", name: "아이티",       rank: 89 },
-      ],
-      D: [
-        { code: "USA", name: "미국",         rank: 15 },
-        { code: "PAR", name: "파라과이",     rank: 47 },
-        { code: "AUS", name: "호주",         rank: 26 },
-        { code: "POC", name: "UEFA PO-C",    rank: 38 },
-      ],
-      E: [
-        { code: "GER", name: "독일",         rank: 9  },
-        { code: "CIV", name: "코트디부아르", rank: 42 },
-        { code: "ECU", name: "에콰도르",     rank: 45 },
-        { code: "CUW", name: "퀴라소",       rank: 82 },
-      ],
-      F: [
-        { code: "NED", name: "네덜란드",     rank: 7  },
-        { code: "JPN", name: "일본",         rank: 19 },
-        { code: "TUN", name: "튀니지",       rank: 33 },
-        { code: "POB", name: "UEFA PO-B",    rank: 44 },
-      ],
-      G: [
-        { code: "BEL", name: "벨기에",       rank: 8  },
-        { code: "IRN", name: "이란",         rank: 21 },
-        { code: "EGY", name: "이집트",       rank: 34 },
-        { code: "NZL", name: "뉴질랜드",     rank: 90 },
-      ],
-      H: [
-        { code: "ESP", name: "스페인",       rank: 1  },
-        { code: "URU", name: "우루과이",     rank: 16 },
-        { code: "KSA", name: "사우디",       rank: 60 },
-        { code: "CPV", name: "카보베르데",   rank: 68 },
-      ],
-      I: [
-        { code: "FRA", name: "프랑스",       rank: 3  },
-        { code: "SEN", name: "세네갈",       rank: 12 },
-        { code: "NOR", name: "노르웨이",     rank: 20 },
-        { code: "PL2", name: "대륙간 PO-2",  rank: 100 },
-      ],
-      J: [
-        { code: "ARG", name: "아르헨티나",   rank: 2  },
-        { code: "AUT", name: "오스트리아",   rank: 24 },
-        { code: "ALG", name: "알제리",       rank: 36 },
-        { code: "JOR", name: "요르단",       rank: 69 },
-      ],
-      K: [
-        { code: "POR", name: "포르투갈",     rank: 6  },
-        { code: "COL", name: "콜롬비아",     rank: 13 },
-        { code: "UZB", name: "우즈베키스탄", rank: 50 },
-        { code: "PL1", name: "대륙간 PO-1",  rank: 110 },
-      ],
-      L: [
-        { code: "ENG", name: "잉글랜드",     rank: 4  },
-        { code: "CRO", name: "크로아티아",   rank: 11 },
-        { code: "GHA", name: "가나",         rank: 55 },
-        { code: "PAN", name: "파나마",       rank: 73 },
-      ],
+      A: [{ code:"MEX",name:"멕시코",rank:16},{code:"KOR",name:"한국",rank:23},{code:"RSA",name:"남아공",rank:60},{code:"POD",name:"UEFA PO-D",rank:35}],
+      B: [{ code:"CAN",name:"캐나다",rank:29},{code:"SUI",name:"스위스",rank:22},{code:"POA",name:"UEFA PO-A",rank:40},{code:"QAT",name:"카타르",rank:57}],
+      C: [{ code:"BRA",name:"브라질",rank:5},{code:"MAR",name:"모로코",rank:8},{code:"SCO",name:"스코틀랜드",rank:37},{code:"HAI",name:"아이티",rank:89}],
+      D: [{ code:"USA",name:"미국",rank:15},{code:"PAR",name:"파라과이",rank:47},{code:"AUS",name:"호주",rank:26},{code:"POC",name:"UEFA PO-C",rank:38}],
+      E: [{ code:"GER",name:"독일",rank:9},{code:"CIV",name:"코트디부아르",rank:42},{code:"ECU",name:"에콰도르",rank:45},{code:"CUW",name:"퀴라소",rank:82}],
+      F: [{ code:"NED",name:"네덜란드",rank:7},{code:"JPN",name:"일본",rank:19},{code:"TUN",name:"튀니지",rank:33},{code:"POB",name:"UEFA PO-B",rank:44}],
+      G: [{ code:"BEL",name:"벨기에",rank:8},{code:"IRN",name:"이란",rank:21},{code:"EGY",name:"이집트",rank:34},{code:"NZL",name:"뉴질랜드",rank:90}],
+      H: [{ code:"ESP",name:"스페인",rank:1},{code:"URU",name:"우루과이",rank:16},{code:"KSA",name:"사우디",rank:60},{code:"CPV",name:"카보베르데",rank:68}],
+      I: [{ code:"FRA",name:"프랑스",rank:3},{code:"SEN",name:"세네갈",rank:12},{code:"NOR",name:"노르웨이",rank:20},{code:"PL2",name:"대륙간 PO-2",rank:100}],
+      J: [{ code:"ARG",name:"아르헨티나",rank:2},{code:"AUT",name:"오스트리아",rank:24},{code:"ALG",name:"알제리",rank:36},{code:"JOR",name:"요르단",rank:69}],
+      K: [{ code:"POR",name:"포르투갈",rank:6},{code:"COL",name:"콜롬비아",rank:13},{code:"UZB",name:"우즈베키스탄",rank:50},{code:"PL1",name:"대륙간 PO-1",rank:110}],
+      L: [{ code:"ENG",name:"잉글랜드",rank:4},{code:"CRO",name:"크로아티아",rank:11},{code:"GHA",name:"가나",rank:55},{code:"PAN",name:"파나마",rank:73}],
     };
 
     const MOCK_PREDICTIONS = {
-      A: { prediction: ["MEX","KOR","POD","RSA"], summary: "멕시코는 FIFA 랭킹 16위의 저력으로 조 1위가 유력합니다. 한국은 풍부한 월드컵 경험을 바탕으로 2위 진출을 노립니다.", insights: ["멕시코는 북중미 개최국 버프로 홈 어드밴티지 기대", "한국은 손흥민 중심의 조직력으로 돌풍 가능", "남아공은 아프리카 특유의 강한 피지컬이 변수"] },
-      B: { prediction: ["SUI","CAN","POA","QAT"], summary: "스위스는 안정적인 전술과 유럽 경험으로 조 1위를 차지할 가능성이 높습니다. 개최국 캐나다는 홈 이점을 살려 16강 진출을 노립니다.", insights: ["스위스는 수비 안정성이 핵심 강점", "캐나다는 데이비스 중심 공격진이 위협적", "카타르는 전 대회 최약체였으나 성장 가능성 있음"] },
-      C: { prediction: ["BRA","MAR","SCO","HAI"], summary: "브라질은 FIFA 랭킹 5위의 강호로 조 1위가 확실시됩니다. 모로코는 카타르 월드컵 4강의 저력을 이어갈 전망입니다.", insights: ["브라질은 네이마르 이후 세대 전환기이지만 여전히 강력", "모로코는 아프리카 최강으로 유럽팀도 긴장", "스코틀랜드는 역사적으로 월드컵 본선에서 고전"] },
-      D: { prediction: ["USA","AUS","PAR","POC"], summary: "미국은 개최국 이점과 젊은 재능들로 조 1위를 노립니다. 호주는 카타르 월드컵 8강 신화를 재현할 가능성이 있습니다.", insights: ["미국은 새로운 황금세대 성장 중", "호주는 사커루스의 핵심 공격수 활약 기대", "파라과이는 남미 특유의 피지컬 축구로 변수"] },
-      E: { prediction: ["GER","ECU","CIV","CUW"], summary: "독일은 FIFA 랭킹 9위로 조 1위 최유력 후보입니다. 에콰도르는 남미의 신흥 강호로 2위 경쟁이 치열할 전망입니다.", insights: ["독일은 전술 혁신으로 2018·2022 조기탈락 설욕 노림", "코트디부아르는 아프리카 예선 최강자", "퀴라소는 처음 진출한 신흥 팀으로 이변 가능성 낮음"] },
-      F: { prediction: ["NED","JPN","TUN","POB"], summary: "네덜란드는 FIFA 랭킹 7위의 강호로 조 1위가 유력합니다. 일본은 카타르 월드컵 16강의 기세를 이어가 2위를 노립니다.", insights: ["네덜란드 판다이크 중심의 수비 철벽", "일본은 유럽파 중심으로 전력이 크게 업그레이드", "튀니지는 아프리카 3번째 시드로 이변 가능성"] },
-      G: { prediction: ["BEL","IRN","EGY","NZL"], summary: "벨기에는 황금세대의 마지막 월드컵으로 반드시 1위를 노립니다. 이란은 아시아의 강호로 16강 진출을 노립니다.", insights: ["벨기에 데브뤼너·루카쿠는 여전히 세계 최고 수준", "이란은 아시아 예선 1위로 올라온 강팀", "이집트 살라의 개인기가 변수"] },
-      H: { prediction: ["ESP","URU","CPV","KSA"], summary: "스페인은 FIFA 랭킹 1위의 절대 강호로 조 1위가 확실합니다. 우루과이는 남미의 전통 강호로 2위를 노립니다.", insights: ["스페인은 티키타카 부활로 우승 후보 1순위", "우루과이 누네스·발베르데 세대교체 완성", "카보베르데는 아프리카 예선 돌풍 팀"] },
-      I: { prediction: ["FRA","SEN","NOR","PL2"], summary: "프랑스는 FIFA 랭킹 3위의 디펜딩 준우승팀으로 조 1위가 유력합니다. 세네갈은 아프리카 최강으로 2위 경쟁을 벌일 것입니다.", insights: ["프랑스 음바페가 이끄는 공격진은 세계 최강", "세네갈 마네 없이도 강한 조직력 유지", "노르웨이 홀란드의 골 결정력이 최대 변수"] },
-      J: { prediction: ["ARG","AUT","ALG","JOR"], summary: "아르헨티나는 디펜딩 챔피언으로 조 1위가 확실합니다. 오스트리아는 유럽의 신흥 강호로 2위를 노립니다.", insights: ["아르헨티나 메시의 마지막 월드컵 방어전", "오스트리아는 분데스리가 정상급 선수들로 구성", "알제리는 아프리카 3번째 시드로 이변 가능성"] },
-      K: { prediction: ["POR","COL","UZB","PL1"], summary: "포르투갈은 FIFA 랭킹 6위로 조 1위가 유력합니다. 콜롬비아는 남미의 강호로 2위 경쟁에서 우위를 점할 전망입니다.", insights: ["포르투갈은 호날두 이후 세대교체로 오히려 더 강해짐", "콜롬비아 루이스 디아스는 세계 최고 윙어 중 한 명", "우즈베키스탄은 아시아 예선 돌풍 팀"] },
-      L: { prediction: ["ENG","CRO","GHA","PAN"], summary: "잉글랜드는 FIFA 랭킹 4위의 강호로 조 1위가 유력합니다. 크로아티아는 카타르 준우승의 저력으로 2위를 노립니다.", insights: ["잉글랜드는 벨링엄 중심으로 황금세대 완성", "크로아티아 모드리치의 마지막 월드컵 도전", "가나는 아프리카 3번째 시드로 이변 가능성"] },
+      A:{prediction:["MEX","KOR","POD","RSA"],summary:"멕시코는 FIFA 랭킹 16위의 저력으로 조 1위가 유력합니다. 한국은 풍부한 월드컵 경험을 바탕으로 2위 진출을 노립니다.",insights:["멕시코는 북중미 개최국 버프로 홈 어드밴티지 기대","한국은 손흥민 중심의 조직력으로 돌풍 가능","남아공은 아프리카 특유의 강한 피지컬이 변수"]},
+      B:{prediction:["SUI","CAN","POA","QAT"],summary:"스위스는 안정적인 전술과 유럽 경험으로 조 1위를 차지할 가능성이 높습니다. 개최국 캐나다는 홈 이점을 살려 16강 진출을 노립니다.",insights:["스위스는 수비 안정성이 핵심 강점","캐나다는 데이비스 중심 공격진이 위협적","카타르는 전 대회 최약체였으나 성장 가능성 있음"]},
+      C:{prediction:["BRA","MAR","SCO","HAI"],summary:"브라질은 FIFA 랭킹 5위의 강호로 조 1위가 확실시됩니다. 모로코는 카타르 월드컵 4강의 저력을 이어갈 전망입니다.",insights:["브라질은 네이마르 이후 세대 전환기이지만 여전히 강력","모로코는 아프리카 최강으로 유럽팀도 긴장","스코틀랜드는 역사적으로 월드컵 본선에서 고전"]},
+      D:{prediction:["USA","AUS","PAR","POC"],summary:"미국은 개최국 이점과 젊은 재능들로 조 1위를 노립니다. 호주는 카타르 월드컵 8강 신화를 재현할 가능성이 있습니다.",insights:["미국은 새로운 황금세대 성장 중","호주는 사커루스의 핵심 공격수 활약 기대","파라과이는 남미 특유의 피지컬 축구로 변수"]},
+      E:{prediction:["GER","ECU","CIV","CUW"],summary:"독일은 FIFA 랭킹 9위로 조 1위 최유력 후보입니다. 에콰도르는 남미의 신흥 강호로 2위 경쟁이 치열할 전망입니다.",insights:["독일은 전술 혁신으로 2018·2022 조기탈락 설욕 노림","코트디부아르는 아프리카 예선 최강자","퀴라소는 처음 진출한 신흥 팀으로 이변 가능성 낮음"]},
+      F:{prediction:["NED","JPN","TUN","POB"],summary:"네덜란드는 FIFA 랭킹 7위의 강호로 조 1위가 유력합니다. 일본은 카타르 월드컵 16강의 기세를 이어가 2위를 노립니다.",insights:["네덜란드 판다이크 중심의 수비 철벽","일본은 유럽파 중심으로 전력이 크게 업그레이드","튀니지는 아프리카 3번째 시드로 이변 가능성"]},
+      G:{prediction:["BEL","IRN","EGY","NZL"],summary:"벨기에는 황금세대의 마지막 월드컵으로 반드시 1위를 노립니다. 이란은 아시아의 강호로 16강 진출을 노립니다.",insights:["벨기에 데브뤼너·루카쿠는 여전히 세계 최고 수준","이란은 아시아 예선 1위로 올라온 강팀","이집트 살라의 개인기가 변수"]},
+      H:{prediction:["ESP","URU","CPV","KSA"],summary:"스페인은 FIFA 랭킹 1위의 절대 강호로 조 1위가 확실합니다. 우루과이는 남미의 전통 강호로 2위를 노립니다.",insights:["스페인은 티키타카 부활로 우승 후보 1순위","우루과이 누네스·발베르데 세대교체 완성","카보베르데는 아프리카 예선 돌풍 팀"]},
+      I:{prediction:["FRA","SEN","NOR","PL2"],summary:"프랑스는 FIFA 랭킹 3위의 디펜딩 준우승팀으로 조 1위가 유력합니다. 세네갈은 아프리카 최강으로 2위 경쟁을 벌일 것입니다.",insights:["프랑스 음바페가 이끄는 공격진은 세계 최강","세네갈 마네 없이도 강한 조직력 유지","노르웨이 홀란드의 골 결정력이 최대 변수"]},
+      J:{prediction:["ARG","AUT","ALG","JOR"],summary:"아르헨티나는 디펜딩 챔피언으로 조 1위가 확실합니다. 오스트리아는 유럽의 신흥 강호로 2위를 노립니다.",insights:["아르헨티나 메시의 마지막 월드컵 방어전","오스트리아는 분데스리가 정상급 선수들로 구성","알제리는 아프리카 3번째 시드로 이변 가능성"]},
+      K:{prediction:["POR","COL","UZB","PL1"],summary:"포르투갈은 FIFA 랭킹 6위로 조 1위가 유력합니다. 콜롬비아는 남미의 강호로 2위 경쟁에서 우위를 점할 전망입니다.",insights:["포르투갈은 호날두 이후 세대교체로 오히려 더 강해짐","콜롬비아 루이스 디아스는 세계 최고 윙어 중 한 명","우즈베키스탄은 아시아 예선 돌풍 팀"]},
+      L:{prediction:["ENG","CRO","GHA","PAN"],summary:"잉글랜드는 FIFA 랭킹 4위의 강호로 조 1위가 유력합니다. 크로아티아는 카타르 준우승의 저력으로 2위를 노립니다.",insights:["잉글랜드는 벨링엄 중심으로 황금세대 완성","크로아티아 모드리치의 마지막 월드컵 도전","가나는 아프리카 3번째 시드로 이변 가능성"]},
     };
 
-    function sortByRank(t) { return [...t].sort((a, b) => a.rank - b.rank); }
+    function sortByRank(t) { return [...t].sort((a,b) => a.rank - b.rank); }
 
     function FlagCell({ code }) {
       const src = FLAG_IMAGES[code];
       return src
-        ? <img src={src} alt={code} style={{ width: 38, height: 26, objectFit: "contain", flexShrink: 0 }} />
-        : <span style={{ fontSize: 16, flexShrink: 0 }}>🏳️</span>;
+        ? <img src={src} alt={code} style={{ width:38, height:26, objectFit:"contain", flexShrink:0 }} />
+        : <span style={{ fontSize:16, flexShrink:0 }}>🏳️</span>;
     }
 
     function Handle() {
       return (
-        <svg width="16" height="10" viewBox="0 0 16 10" style={{ flexShrink: 0 }}>
+        <svg width="16" height="10" viewBox="0 0 16 10" style={{ flexShrink:0 }}>
           <rect y="0" width="16" height="2" rx="1" fill="#b0bec5"/>
           <rect y="5" width="16" height="2" rx="1" fill="#b0bec5"/>
         </svg>
@@ -182,47 +122,42 @@
     }
 
     function SavedToast({ onClose }) {
-      useEffect(() => {
-        const t = setTimeout(onClose, 2000);
-        return () => clearTimeout(t);
-      }, []);
+      useEffect(() => { const t = setTimeout(onClose, 2000); return () => clearTimeout(t); }, []);
       return (
-        <div style={{
-          position: "fixed", bottom: 100, left: "50%", transform: "translateX(-50%)",
-          background: "#1c1c2e", color: "#fff", fontFamily: HEL, fontWeight: 700,
-          fontSize: 14, padding: "14px 28px", borderRadius: 50,
-          boxShadow: "0 8px 32px rgba(0,0,0,0.22)",
-          display: "flex", alignItems: "center", gap: 10,
-          zIndex: 2000,
-          animation: "fadeInUp 0.25s ease",
-        }}>
-          <span style={{ fontSize: 18 }}>✅</span> 저장되었습니다.
+        <div style={{ position:"fixed", bottom:100, left:"50%", transform:"translateX(-50%)", background:"#1c1c2e", color:"#fff", fontFamily:HEL, fontWeight:700, fontSize:14, padding:"14px 28px", borderRadius:50, boxShadow:"0 8px 32px rgba(0,0,0,0.22)", display:"flex", alignItems:"center", gap:10, zIndex:2000, animation:"fadeInUp 0.25s ease" }}>
+          <span style={{ fontSize:18 }}>✅</span> 저장되었습니다.
         </div>
       );
     }
 
-    function GroupCard({ groupId, teams, onAIClick }) {
+    function GroupCard({ groupId, teams, onAIClick, confirmKey }) {
       const [order, setOrder] = useState(sortByRank(teams));
+      const [baseline, setBaseline] = useState(() => sortByRank(teams).map(t => t.code));
       const [dragging, setDragging] = useState(null);
       const [dragOver, setDragOver] = useState(null);
-      const onDS = (e, i) => { setDragging(i); e.dataTransfer.effectAllowed = "move"; };
-      const onDO = (e, i) => { e.preventDefault(); if (i !== dragOver) setDragOver(i); };
-      const onDrop = (e, i) => {
+
+      // 확인 누르면 현재 순서를 baseline으로 → 하이라이트 해제
+      useEffect(() => {
+        if (confirmKey > 0) setBaseline(order.map(t => t.code));
+      }, [confirmKey]);
+
+      const onDS = (e,i) => { setDragging(i); e.dataTransfer.effectAllowed="move"; };
+      const onDO = (e,i) => { e.preventDefault(); if (i!==dragOver) setDragOver(i); };
+      const onDrop = (e,i) => {
         e.preventDefault();
-        if (dragging === null || dragging === i) return;
-        const next = [...order]; const [m] = next.splice(dragging, 1); next.splice(i, 0, m);
+        if (dragging===null || dragging===i) return;
+        const next=[...order]; const [m]=next.splice(dragging,1); next.splice(i,0,m);
         setOrder(next); setDragging(null); setDragOver(null);
       };
+
       return (
-        <div style={{ background:"#fff", borderRadius:16, overflow:"hidden", boxShadow:"0 2px 12px rgba(0,0,0,0.08)", border:"1px solid #e2e8f0", minWidth: 0, maxWidth: "100%", flex: "none" }}>
+        <div style={{ background:"#fff", borderRadius:16, overflow:"hidden", boxShadow:"0 2px 12px rgba(0,0,0,0.08)", border:"1px solid #e2e8f0", minWidth:0, maxWidth:"100%", flex:"none" }}>
           <div style={{ background:"#1c1c2e", padding:"13px 15px 12px", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
             <span style={{ fontFamily:HEL, fontWeight:900, fontSize:18, color:"#fff", letterSpacing:1 }}>GROUP {groupId}</span>
-            <button
-              onClick={() => onAIClick(groupId, order)}
-              title="AI 예측"
+            <button onClick={() => onAIClick(groupId,order)} title="AI 예측"
               style={{ background:"#1c1c2e", border:"1.5px solid rgba(255,255,255,0.18)", borderRadius:8, width:34, height:34, display:"flex", alignItems:"center", justifyContent:"center", cursor:"pointer", padding:0, transition:"border-color .15s, transform .13s", flexShrink:0 }}
-              onMouseEnter={e => { e.currentTarget.style.borderColor="rgba(255,255,255,0.45)"; e.currentTarget.style.transform="scale(1.08)"; }}
-              onMouseLeave={e => { e.currentTarget.style.borderColor="rgba(255,255,255,0.18)"; e.currentTarget.style.transform="scale(1)"; }}
+              onMouseEnter={e=>{ e.currentTarget.style.borderColor="rgba(255,255,255,0.45)"; e.currentTarget.style.transform="scale(1.08)"; }}
+              onMouseLeave={e=>{ e.currentTarget.style.borderColor="rgba(255,255,255,0.18)"; e.currentTarget.style.transform="scale(1)"; }}
             >
               <svg width="17" height="16" viewBox="0 0 17 16" fill="none">
                 <rect x="1" y="3" width="11" height="1.8" rx="0.9" fill="white"/>
@@ -233,19 +168,50 @@
               </svg>
             </button>
           </div>
-          {order.map((t, i) => (
-            <div key={t.code} draggable
-              onDragStart={e => onDS(e,i)} onDragOver={e => onDO(e,i)}
-              onDrop={e => onDrop(e,i)} onDragEnd={() => { setDragging(null); setDragOver(null); }}
-              style={{ display:"flex", alignItems:"center", gap:10, padding:"9px 12px 9px 14px", borderBottom:i<3?"1px solid #f1f4f9":"none", background:dragOver===i?"#eff4ff":dragging===i?"#e6eeff":"#fff", transition:"background .1s", cursor:"grab", userSelect:"none" }}
-            >
-              <span style={{ fontFamily:HEL, fontWeight:700, fontSize:15, width:18, textAlign:"center", flexShrink:0, color:i<2?"#1a6ef5":"#1e293b" }}>{i+1}</span>
-              <FlagCell code={t.code} />
-              <span style={{ flex:1, fontFamily:HEL, fontWeight:700, fontSize:13, color:i<2?"#1e293b":"#b0bec5", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{t.name}</span>
-              <span style={{ fontFamily:HEL, fontWeight:700, fontSize:11, color:"#94a3b8", flexShrink:0 }}>FIFA {t.rank}위</span>
-              <Handle />
-            </div>
-          ))}
+
+          {order.map((t,i) => {
+            const isChanged = baseline[i] !== t.code;
+            const isDragging = dragging === i;
+            const isDragOver = dragOver === i;
+
+            // 배경 / 테두리 결정
+            let rowBg = "#fff";
+            let rowBorder = "none";
+            let rowOutline = "none";
+
+            if (isDragOver) {
+              rowBg = "#eff4ff";
+            } else if (isDragging) {
+              rowBg = "#e6eeff";
+            } else if (isChanged) {
+              rowBg = "rgba(26,110,245,0.07)";
+              rowOutline = "2px solid rgba(26,110,245,0.5)";
+            }
+
+            return (
+              <div key={t.code} draggable
+                onDragStart={e=>onDS(e,i)} onDragOver={e=>onDO(e,i)}
+                onDrop={e=>onDrop(e,i)} onDragEnd={()=>{ setDragging(null); setDragOver(null); }}
+                style={{
+                  display:"flex", alignItems:"center", gap:10,
+                  padding:"9px 12px 9px 14px",
+                  borderBottom: i<3 ? "1px solid #f1f4f9" : "none",
+                  background: rowBg,
+                  outline: rowOutline,
+                  outlineOffset: "-2px",
+                  transition:"background .15s, outline .2s",
+                  cursor:"grab", userSelect:"none",
+                  position:"relative",
+                }}
+              >
+                <span style={{ fontFamily:HEL, fontWeight:700, fontSize:15, width:18, textAlign:"center", flexShrink:0, color:i<2?"#1a6ef5":"#1e293b" }}>{i+1}</span>
+                <FlagCell code={t.code} />
+                <span style={{ flex:1, fontFamily:HEL, fontWeight:700, fontSize:13, color:i<2?"#1e293b":"#b0bec5", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{t.name}</span>
+                <span style={{ fontFamily:HEL, fontWeight:700, fontSize:11, color:"#94a3b8", flexShrink:0 }}>FIFA {t.rank}위</span>
+                <Handle />
+              </div>
+            );
+          })}
         </div>
       );
     }
@@ -255,15 +221,12 @@
       const [loading, setLoading] = useState(true);
       const run = () => {
         setLoading(true); setResult(null);
-        setTimeout(() => {
-          setResult(MOCK_PREDICTIONS[groupId] || MOCK_PREDICTIONS["A"]);
-          setLoading(false);
-        }, 1200);
+        setTimeout(() => { setResult(MOCK_PREDICTIONS[groupId]||MOCK_PREDICTIONS["A"]); setLoading(false); }, 1200);
       };
       useEffect(() => { run(); }, []);
       return (
         <div onClick={onClose} style={{ position:"fixed", inset:0, background:"rgba(0,0,0,0.55)", zIndex:1000, display:"flex", alignItems:"center", justifyContent:"center", padding:16 }}>
-          <div onClick={e => e.stopPropagation()} style={{ background:"#fff", borderRadius:18, maxWidth:400, width:"100%", boxShadow:"0 12px 48px rgba(0,0,0,0.2)", overflow:"hidden" }}>
+          <div onClick={e=>e.stopPropagation()} style={{ background:"#fff", borderRadius:18, maxWidth:400, width:"100%", boxShadow:"0 12px 48px rgba(0,0,0,0.2)", overflow:"hidden" }}>
             <div style={{ background:"#1c1c2e", padding:"17px 20px 14px", display:"flex", alignItems:"center", justifyContent:"space-between" }}>
               <div>
                 <div style={{ fontFamily:HEL, color:"#7c83fd", fontWeight:700, fontSize:11, letterSpacing:1 }}>AI 분석</div>
@@ -277,7 +240,7 @@
                 <div>
                   <div style={{ fontFamily:HEL, fontWeight:800, fontSize:13, color:"#1e293b", marginBottom:9 }}>🏆 AI 예측 순위</div>
                   {result.prediction?.map((code,i) => {
-                    const t = order.find(x => x.code===code)||{name:code, rank:"?"};
+                    const t = order.find(x=>x.code===code)||{name:code,rank:"?"};
                     const bgs=["#fffbeb","#f8fafc","#fff7f0","#f8f8f8"], bars=["#f59e0b","#94a3b8","#cd7f32","#e2e8f0"];
                     return (
                       <div key={code} style={{ display:"flex", alignItems:"center", gap:10, background:bgs[i], borderLeft:`4px solid ${bars[i]}`, borderRadius:"0 10px 10px 0", padding:"8px 12px", marginBottom:5 }}>
@@ -334,11 +297,13 @@
     function App() {
       const [modal, setModal] = useState(null);
       const [toast, setToast] = useState(false);
+      const [confirmKey, setConfirmKey] = useState(0);
       const cols = useColumns();
       const entries = Object.entries(GROUPS);
-      const columns = Array.from({ length: cols }, (_, ci) =>
-        entries.filter((_, i) => i % cols === ci)
-      );
+      const columns = Array.from({ length: cols }, (_,ci) => entries.filter((_,i) => i%cols===ci));
+
+      const handleConfirm = () => { setConfirmKey(k=>k+1); setToast(true); };
+
       return (
         <div style={{ minHeight:"100vh", background:"#edf0f4", padding:"26px 16px 100px", fontFamily:HEL, boxSizing:"border-box" }}>
           <div style={{ textAlign:"center", marginBottom:28 }}>
@@ -347,27 +312,24 @@
             <p style={{ color:"#94a3b8", fontSize:12, marginTop:7 }}>팀을 드래그해서 순위를 바꾸고 · 🤖 버튼으로 AI 분석 확인</p>
           </div>
           <div style={{ display:"grid", gridTemplateColumns:`repeat(${cols}, 1fr)`, gap:16, maxWidth:1400, margin:"0 auto" }}>
-            {columns.map((col, ci) => (
+            {columns.map((col,ci) => (
               <div key={ci} style={{ display:"flex", flexDirection:"column", gap:16 }}>
-                {col.map(([id, teams]) => (
-                  <GroupCard key={id} groupId={id} teams={teams} onAIClick={(gid,ord) => setModal({groupId:gid, order:ord})} />
+                {col.map(([id,teams]) => (
+                  <GroupCard key={id} groupId={id} teams={teams}
+                    onAIClick={(gid,ord)=>setModal({groupId:gid,order:ord})}
+                    confirmKey={confirmKey}
+                  />
                 ))}
               </div>
             ))}
           </div>
-          <button
-            onClick={() => setToast(true)}
-            style={{
-              position:"fixed", bottom:28, left:"50%", transform:"translateX(-50%)",
-              background:"linear-gradient(135deg,#1a6ef5,#3b82f6)",
-              color:"#fff", border:"none", borderRadius:50,
-              padding:"16px 48px", fontFamily:HEL, fontWeight:800,
-              fontSize:16, cursor:"pointer", zIndex:900,
-              boxShadow:"0 8px 28px rgba(26,110,245,0.45)", letterSpacing:1,
-            }}
+          <button onClick={handleConfirm}
+            style={{ position:"fixed", bottom:28, left:"50%", transform:"translateX(-50%)", background:"linear-gradient(135deg,#1a6ef5,#3b82f6)", color:"#fff", border:"none", borderRadius:50, padding:"16px 48px", fontFamily:HEL, fontWeight:800, fontSize:16, cursor:"pointer", zIndex:900, boxShadow:"0 8px 28px rgba(26,110,245,0.45)", letterSpacing:1, transition:"transform .15s, box-shadow .15s" }}
+            onMouseEnter={e=>{ e.currentTarget.style.transform="translateX(-50%) scale(1.05)"; e.currentTarget.style.boxShadow="0 12px 36px rgba(26,110,245,0.55)"; }}
+            onMouseLeave={e=>{ e.currentTarget.style.transform="translateX(-50%) scale(1)"; e.currentTarget.style.boxShadow="0 8px 28px rgba(26,110,245,0.45)"; }}
           >✓ 확인</button>
-          {toast && <SavedToast onClose={() => setToast(false)} />}
-          {modal && <AIModal groupId={modal.groupId} order={modal.order} onClose={() => setModal(null)} />}
+          {toast && <SavedToast onClose={()=>setToast(false)} />}
+          {modal && <AIModal groupId={modal.groupId} order={modal.order} onClose={()=>setModal(null)} />}
         </div>
       );
     }
